@@ -1,0 +1,17 @@
+@import 'src/assets/styles/global.scss';
+@import 'src/assets/styles/mixin';
+@import 'src/assets/styles/variable';
+
+.dropdown-item {
+  a {
+    color: #000 !important;
+  }
+}
+.dropdown-menu{
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+}
+.user-account-link{
+    position: relative;
+}

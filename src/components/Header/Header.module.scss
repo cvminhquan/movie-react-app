@@ -1,7 +1,85 @@
 @import 'src/assets/styles/global.scss';
-@import "src/assets/styles/mixin" ;
-@import "src/assets/styles/variable" ;
-
-.root {
-
+@import 'src/assets/styles/mixin';
+@import 'src/assets/styles/variable';
+.site-header {
+  background: #0c0e17;
+}
+.header {
+  
+  top: 0;
+  z-index: 1050;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  .main-menu {
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0 45px;
+    gap: 20px;
+    li > a {
+      color: #fff;
+      position: relative;
+      display: block;
+      padding: 32px 20px;
+      &::after {
+        background: url(../../assets/images/arrow.svg) no-repeat;
+        display: inline-block;
+        margin-left: 9px;
+        content: '';
+        width: 7px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+      }
+    }
+  }
+  .logo {
+    a {
+      color: #fff;
+      align-items: center;
+      display: flex;
+    }
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    img {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  }
+  &__title {
+    font-size: 26px;
+  }
+  &__left {
+    display: flex;
+    align-items: center;
+  }
+  &__right {
+    gap: 10px;
+    align-items: center;
+    display: flex;
+  }
+  .user-account {
+    .user-account-link {
+      position: relative;
+      &::after {
+        background: url(../../assets/images/arrow.svg) no-repeat;
+        display: inline-block;
+        right: -14px;
+        content: '';
+        width: 7px;
+        height: 6px;
+        position: absolute;
+        top: 50%;
+      }
+    }
+  }
+}
+.text-primary {
+  color: $color-primary;
 }

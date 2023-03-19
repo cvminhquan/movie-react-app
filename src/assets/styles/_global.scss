@@ -1,8 +1,16 @@
-@import "src/assets/styles/mixin" ;
-@import "src/assets/styles/variable" ;
+@import 'src/assets/styles/mixin';
+@import 'src/assets/styles/variable';
+@import 'src/assets/styles/reset';
 
-.g-container {
-  max-width: 1280px;
+.root {
+  margin-top: 30px;
+}
+.App {
+  font-family: Montserrat, "Open Sans", sans-serif;
+  color: #464646;
+  line-height: 1.4;
   margin: 0 auto;
-  padding: 0 1rem;
+}
+.container-fluid{
+  max-width: 1776px;
 }

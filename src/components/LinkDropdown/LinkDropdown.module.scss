@@ -3,15 +3,57 @@
 @import 'src/assets/styles/variable';
 
 .dropdown-item {
+  display: block;
+  width: 100%;
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  font-size: 14px;
   a {
     color: #000 !important;
   }
 }
-.dropdown-menu{
-    background-color: aqua;
-    position: absolute;
-    bottom: 0;
+.sub-menu {
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  margin-top: 1px;
+  right: 0;
+  left: auto !important;
+  top: 100% !important;
+  -webkit-transform: none !important;
+  -ms-transform: none !important;
+  transform: none !important;
 }
-.user-account-link{
-    position: relative;
+.dropdown-menu {
+  position: absolute;
+  bottom: 0;
+  &::before {
+    border-bottom: 10px solid #657786;
+    border-bottom-color: rgba(0, 0, 0, 0.1);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    top: -10px;
+    right: 10px;
+  }
+  &::after {
+    top: -9px;
+    right: 11px;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #fff;
+  }
+}
+.user-account-link {
+  position: relative;
+  &::after{
+    display: none;
+  }
 }

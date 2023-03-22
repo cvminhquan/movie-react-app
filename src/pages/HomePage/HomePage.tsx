@@ -2,6 +2,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from './HomePage.module.scss'
+import classNames from 'classnames'
 
 export interface HomePageProps {}
 
@@ -15,10 +16,10 @@ const HomePage: React.FC<HomePageProps> = (props) => {
           <div className='movie-single-content'>
             <div className="movie-single-inner">
               <div className={styles["movie-slider"]}>
-                <div className="container">
+                <div className={classNames(styles["wrapper-infor-movie"], "container")}>
                   <div className={styles["single-feature-movie"]}>
                   <Link to="" >
-                      <h3 className="movie-title">
+                      <h3 className={styles["movie-title"]}>
                       Fantastic Beasts and Where to Find Them
                       </h3>
                     </Link>

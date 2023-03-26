@@ -17,12 +17,53 @@
   height: 100%;
 }
 .single-feature-movie {
+  a {
+    color: #fff;
+  }
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
   max-width: 50%;
   text-align: center;
   .movie-title {
+    order: 2;
     font-size: 4rem;
     font-weight: 700;
     color: $color-text;
+  }
+  .movie-meta {
+    order: 1;
+    color: #fff;
+    &--release-year {
+      color: #fff;
+    }
+    &--genre {
+      a {
+        color: #fff;
+      }
+    }
+    &--duration {
+    }
+    span + span:before {
+      content: '|';
+      padding: 0 10px;
+    }
+  }
+  .movie-action {
+    display: flex;
+    order: 3;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    .action-watch{
+      background-color: #24baef;
+      border-radius: 8px;
+      margin-right: 10px;
+    }
+    a {
+      padding: 21px 38px 16px;
+      display: inline-block;
+      width: auto;
+    }
   }
 }

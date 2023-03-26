@@ -7,6 +7,7 @@ import classNames from 'classnames'
 import SearchBar from '../SearchBar/SearchBar'
 import LinkDropdown from '../LinkDropdown/LinkDropdown'
 import { Dropdown } from 'react-bootstrap'
+import SideBar from '../SideBar/SideBar'
 
 export interface HeaderProps {}
 
@@ -24,6 +25,7 @@ const Header: React.FC<HeaderProps> = (props) => {
       <div className='container-fluid'>
         <div className={styles['header']}>
           <div className={styles['header__left']}>
+          {/* <SideBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'} /> */}
             <h1 className={styles['logo']}>
               <Link to='/'>
                 <img src={logo} alt='' />

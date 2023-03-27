@@ -55,15 +55,59 @@
     align-items: center;
     text-align: center;
     justify-content: center;
-    .action-watch{
+    .action-watch {
       background-color: #24baef;
       border-radius: 8px;
-      margin-right: 10px;
+      margin-right: 20px;
+      &:hover {
+        background-color: #0f9ed1;
+      }
+    }
+    .action-add-playlist {
+      border-radius: 10px;
+      border: 2px solid #fff;
     }
     a {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 700;
       padding: 21px 38px 16px;
       display: inline-block;
       width: auto;
     }
+  }
+}
+
+.trending-movie {
+  background-color: #131722;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px 0 15px;
+
+  .heading-trending {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    .trending-title {
+      flex: 1;
+      margin: 0;
+      min-width: 15%;
+      &::after {
+        position: absolute;
+        content: '';
+        margin-left: 25px;
+        background-color: #394253;
+        height: 1px;
+        width: 100%;
+        top: 50%;
+      }
+    }
+  }
+  .nav-tabs {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
